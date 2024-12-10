@@ -3,7 +3,7 @@ Param (
     [string]$FileName = "CMTrace.exe",
     [string]$SourceDir = "$($env:windir)\CCM",
     [string]$DestDir = "$($env:windir)\system32",
-    [string]$URL = "https://github.com/AdamGrossTX/cmtrace/raw/main/CMTrace.exe",
+    [string]$URL = "https://github.com/wclc-mis/cmtrace/raw/refs/heads/main/CMTrace.exe",
     [switch]$RemoveExisting = $True #Remove any non-hardlink file that exists in the dest location
 )
 Start-Transcript -Path $LogPath -Force -ErrorAction SilentlyContinue
